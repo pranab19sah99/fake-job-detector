@@ -88,3 +88,7 @@ def log_prediction(data: dict, label: str, confidence: float):
             label,
             confidence
         ])
+# Command to run the API service
+'''docker run -p 8000:8000 \
+  -v $(pwd)/logs:/app/logs \
+  fake-job-detector:v1'''
